@@ -1,6 +1,6 @@
 """This script launches the main program"""
 
-# module importation
+import sys
 import pygame
 from pygame.locals import *
 
@@ -48,7 +48,7 @@ while run:
     MAZE.create()
     MAZE.display(WINDOW)
 
-    # create and display random objects
+# create and display random objects
 
     # Object N°1
     ETHER.ramdom_loop()

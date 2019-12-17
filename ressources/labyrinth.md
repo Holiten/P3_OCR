@@ -1,0 +1,15 @@
+sggwwwwwgwggwww
+gwgggggwgwwgwgg
+ggwwgwgggwggggw
+wgggwwwwgggwwww
+gggwgggggwwwggw
+wwgwwwwgwwgggww
+gggwwwggggwwwww
+gwgggwwgwgwwggw
+gwwgwgggwgggwww
+wwwggwwwwgwwwww
+wwwgwwgwggwwggw
+wgggwggwgwwggww
+ggwwggwgggggwww
+wwwwggwwgwwgwww
+wggggwwwggwggga
