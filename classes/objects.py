@@ -17,6 +17,7 @@ class Objects:
         self.case_y_rand = 0
         self.pos_x_rand = 0
         self.pos_y_rand = 0
+        self.name = str(sprite)
         self.loop = True
         self.object_state = 1
 

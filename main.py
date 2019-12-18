@@ -39,7 +39,7 @@ TUBE = Objects("ressources/images/tube_plastique.png", MAZE)
 GAME_EVENTS = Events()
 
 # main loop
-while run:
+while run is True:
 
     # Tracking time
     pygame.time.Clock()
@@ -80,7 +80,7 @@ while run:
 
     for event in pygame.event.get():
         if event.type == QUIT:
-            run = False
+            sys.exit()
 
         elif event.type == KEYDOWN:
 
@@ -121,8 +121,27 @@ while run:
                     print("You win")
                     GARDIAN.state = 0
                     MACGYVER.state = 1
+                    run = False
                 else:
                     GAME_EVENTS.loose(WINDOW)
                     print("you loose")
                     GARDIAN.state = 1
                     MACGYVER.state = 0
+                    run = False
+
+run = True
+
+while run is True:
+
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            sys.exit()
+
+    pygame.time.Clock().tick(30)
+    pygame.display.flip()
+    WINDOW.fill((0,0,0))
+    font = pygame.font.SysFont("arial", 15)
+    if Objects.object_count == 0:
+        WINDOW.blit(font.render("YOU WIN", True, (255, 255, 255)), (112.5, 112.5))
+    else:
+        WINDOW.blit(font.render("YOU LOOSE", True, (255, 255, 255)), (112.5, 112.5))
